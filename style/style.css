@@ -73,9 +73,9 @@ header {
 #boxtitulo {
     position: relative;
     background-color: #7C98A3;
-    max-width: 350px;
-    height: 50px;
+    width: 30%;
     box-shadow: 1px 1px rgba(0, 0, 0, 0.274);
+    border-radius: 5px;
 
     left: 50%;
     top: 50%;
@@ -86,18 +86,26 @@ header {
 #boxtitulo > h1 {
     font-family: var(--fonte01);
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2.2em;
+    letter-spacing: 5px;
+    padding: 10px;
     text-transform: uppercase;
     color: white;
     text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.445);
+}
+
+#boxtitulo > .linhatitulo {
+    max-width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
 }
 
 #boxtitulo > p {
     font-family: var(--fonte02);
     color: white;
     font-weight: bold;
+    padding-bottom: 10px;
     text-shadow: 1px 1px 5px black;
-    padding: 5px;
     text-align: center;
 }
 
@@ -107,10 +115,32 @@ main {
     padding: 50px;
 }
 
+#divanun {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#anuncio {
+    background-color: #cccccc;
+    width: 100%;
+    border: 1px solid rgba(163, 162, 162, 0.315);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.336);
+}
+
+#divanun > #anuncio h1 {
+    display: inline-block;
+    color: #919191;
+}
+
 article {
     background-color: #6b828b;
     width: 100%;
-    min-height: 700px;
+    min-height: 1200px;
     margin-bottom: 100px;
     margin: auto;
 }
@@ -149,6 +179,7 @@ aside > p {
 
 #lugares {
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -164,12 +195,12 @@ aside > p {
 }
 
 .child > h2 {
-    font-family: var(--fonte03);
+    
     display: none;
     padding: 50px 5px;
     color: white;
     font-size: 100%;
-    text-shadow: 1px 5px rgba(0, 0, 0, 0.589);
+    text-shadow: 1px 3px rgba(0, 0, 0, 0.466);
     text-align: center;
 }
 
