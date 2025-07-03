@@ -408,10 +408,10 @@ document.querySelectorAll('.parceiro-card').forEach(card => {
     card.onclick = function() {
         const id = this.getAttribute('data-id');
         if(id === 'turismorj') {
-            openModal(`<img src="/imagens/icone-parceiros.svg" alt="Turismo RJ" style="max-width:90px;margin:1em auto;display:block;border-radius:13px;" /><h2>Turismo RJ</h2><p class="lang" data-pt="Agência carioca especializada em roteiros sob medida para o Rio." data-en="Rio travel agency specialized in custom tours.">Agência carioca especializada em roteiros sob medida para o Rio.</p><a href="mailto:contato@turismorj.com.br">contato@turismorj.com.br</a>`);
+            openModal(`<img src="../imagens/icone-parceiros.svg" alt="Turismo RJ" style="max-width:90px;margin:1em auto;display:block;border-radius:13px;" /><h2>Turismo RJ</h2><p class="lang" data-pt="Agência carioca especializada em roteiros sob medida para o Rio." data-en="Rio travel agency specialized in custom tours.">Agência carioca especializada em roteiros sob medida para o Rio.</p><a href="mailto:contato@turismorj.com.br">contato@turismorj.com.br</a>`);
         }
         if(id === 'riotours') {
-            openModal(`<img src="/imagens/icone-parceiros.svg" alt="Rio Tours" style="max-width:90px;margin:1em auto;display:block;border-radius:13px;" /><h2>Rio Tours</h2><p class="lang" data-pt="Guias turísticos credenciados para experiências locais e exclusivas." data-en="Certified guides for exclusive local experiences.">Guias turísticos credenciados para experiências locais e exclusivas.</p><a href="mailto:contato@riotours.com.br">contato@riotours.com.br</a>`);
+            openModal(`<img src="../imagens/icone-parceiros.svg" alt="Rio Tours" style="max-width:90px;margin:1em auto;display:block;border-radius:13px;" /><h2>Rio Tours</h2><p class="lang" data-pt="Guias turísticos credenciados para experiências locais e exclusivas." data-en="Certified guides for exclusive local experiences.">Guias turísticos credenciados para experiências locais e exclusivas.</p><a href="mailto:contato@riotours.com.br">contato@riotours.com.br</a>`);
         }
         updateLang();
     }

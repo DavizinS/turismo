@@ -75,7 +75,7 @@ nav a.active, nav a:hover, nav a:focus {
 #lang-toggle:hover { background: var(--accent); }
 
 header {
-    background: url('/imagens/imgs-tratadas/wallpaperorig.jpg') center/cover no-repeat;
+    background: url('../imagens/imgs-tratadas/wallpaperorig.jpg') center/cover no-repeat;
     height: 58vh;
     min-height: 330px;
     display: flex;
