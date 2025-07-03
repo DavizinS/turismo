@@ -2,95 +2,131 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rio Experience</title>
+    <title>Rio Brasil Experience</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <nav>
-        <a href="index.html" rel="self" id="mainnav">Rio Experience</a>
-        <a href="historia.html" rel="self">História</a>
-        <a href="#" rel="self">Midia</a>
+        <div class="nav-logo">🌴 <span id="nav-title">Rio Brasil Experience</span></div>
+        <ul>
+            <li><a href="#" class="active lang" data-pt="Início" data-en="Home">Início</a></li>
+            <li><a href="#" class="lang" data-pt="História" data-en="History">História</a></li>
+            <li><a href="#" class="lang" data-pt="Mídia" data-en="Media">Mídia</a></li>
+        </ul>
+        <button id="lang-toggle">EN</button>
     </nav>
     <header>
-        <div id="boxtitulo">
-            <h1>Rio</h1>
-            <hr class="linhatitulo">
-            <p>Saiba aqui os melhores pontos turísticos do Rio de Janero!</p>
+        <div class="header-content">
+            <h1 class="lang" data-pt="Cidade Maravilhosa" data-en="Marvelous City">Cidade Maravilhosa</h1>
+            <p class="lang"
+               data-pt="Explore o Rio de Janeiro, do clássico ao inusitado. Seu roteiro começa aqui."
+               data-en="Explore Rio de Janeiro, from classics to hidden gems. Your adventure starts here.">
+                Explore o Rio de Janeiro, do clássico ao inusitado. Seu roteiro começa aqui.
+            </p>
         </div>
     </header>
     <main>
-        <div id="divanun">
-            <section id="anuncio">
-                <h1></h1>
+        <section>
+            <h2>Lorem Ipsu</h2>
+            Cidade Maravilhosa: não é só o refrão de uma música, é a essência de quem já teve o privilégio de sentir o Rio de Janeiro pulsando ao vivo. Nosso site nasceu para ser o seu guia moderno e apaixonado pela alma carioca, reunindo tudo o que torna o Rio um destino único no mundo: natureza exuberante, cultura vibrante, gente acolhedora e uma história que embala sonhos ao som do samba e das ondas do mar.
+            Aqui, você vai além dos cartões-postais clássicos. Descubra segredos, curiosidades, eventos, experiências autênticas, praias, mirantes, festas e, claro, os personagens e melodias que tornam a “Cidade Maravilhosa” eterna.
+            Seja para planejar uma viagem inesquecível, conhecer curiosidades locais ou simplesmente se apaixonar um pouco mais pelo Rio — seu roteiro começa aqui.
+            Vem sentir por que “Cidade Maravilhosa, cheia de encantos mil…” não é só uma canção, é um convite para viver o Rio intensamente, seja turista ou carioca de coração!
             </section>
-            <section id="anuncio">
-                <h1></h1>
+        <div class="main-flex">
+            <section class="turisticos">
+                <h2 class="lang" data-pt="Pontos Turísticos" data-en="Tourist Attractions">Pontos Turísticos</h2>
+                <div class="cards-grid">
+                    <div class="card" data-id="paodeacucar" style="--img:url('/imagens/paodeacucar2.jpg')">
+                        <div class="card-content"><h3>Pão de Açúcar</h3></div>
+                    </div>
+                    <div class="card" data-id="cristo" style="--img:url('/imagens/cristo.jpg')">
+                        <div class="card-content"><h3>Cristo Redentor</h3></div>
+                    </div>
+                    <div class="card" data-id="ipanema" style="--img:url('/imagens/ipanema.png')">
+                        <div class="card-content"><h3>Ipanema</h3></div>
+                    </div>
+                    <div class="card" data-id="escada" style="--img:url('/imagens/escada-lapa.jpg')">
+                        <div class="card-content"><h3>Escadaria Selarón</h3></div>
+                    </div>
+                    <div class="card" data-id="lapa" style="--img:url('/imagens/lapa.jpg')">
+                        <div class="card-content"><h3>Arcos da Lapa</h3></div>
+                    </div>
+                    <div class="card" data-id="museuamanha" style="--img:url('/imagens/museudoamanha.jpg')">
+                        <div class="card-content"><h3>Museu do Amanhã</h3></div>
+                    </div>
+                    <div class="card" data-id="maracana" style="--img:url('/imagens/maracana.jpg')">
+                        <div class="card-content"><h3>Maracanã</h3></div>
+                    </div>
+                    <div class="card" data-id="ilhafiscal" style="--img:url('/imagens/Castelinho.jpg')">
+                        <div class="card-content"><h3>Ilha Fiscal</h3></div>
+                    </div>
+                </div>
             </section>
+            <aside id="parceiros">
+                <div class="parceiros-container">
+                    <h2 class="lang" data-pt="Parceiros Rio Turismo" data-en="Rio Tourism Partners">Parceiros Rio Turismo</h2>
+                    <div class="parceiros-lista">
+                        <div class="parceiro-card" data-id="turismorj">
+                            <img src="/imagens/icone-parceiros.svg" alt="Turismo RJ">
+                            <div><strong>Turismo RJ</strong><span class="lang" data-pt="Agência de turismo" data-en="Travel agency">Agência de turismo</span></div>
+                        </div>
+                        <div class="parceiro-card" data-id="riotours">
+                            <img src="/imagens/icone-parceiros.svg" alt="Rio Tours">
+                            <div><strong>Rio Tours</strong><span class="lang" data-pt="Guias credenciados" data-en="Certified guides">Guias credenciados</span></div>
+                        </div>
+                    </div>
+                    <button id="btn-parceiro" class="btn-parceiro lang"
+                        data-pt="Seja um parceiro!" data-en="Become a partner!">Seja um parceiro!</button>
+                </div>
+            </aside>
         </div>
-        <article id="lugares">
-            <div id="paodeacucar" class="child">
-                <h2>Pão de Açucar</h2>
-            </div>
-            <div id="cristo" class="child">
-                <h2>Cristo Redentor</h2>
-            </div>
-            <div id="ipanema" class="child">
-                <h2>Ipanema</h2>
-            </div>
-            <div id="escada" class="child">
-                <h2>Escada Selaron</h2>
-            </div>
-            <div id="lapa" class="child">
-                <h2>Arcos da Lapa</h2>
-            </div>
-            <div id="museuamanha" class="child">
-                <h2>Museu do Amanhã</h2>
-            </div>
-            <div id="maracana" class="child">
-                <h2>Maracanã</h2>
-            </div>
-            <div id="ilhafiscal" class="child">
-                <h2>Ilha Fiscal</h2>
-            </div>
-        </article>
-        <aside>
-            <h1>Rio de Janeiro</h1>
-            <p>Não perca tempo e venha conhecer nossa Cidade Maravilhosa, um lugar onde você vai se apaixonar e temos total convicção disso!
-                E aí! Está esperando o que? Aqui está mais lugares para você conhecer! 
-            </p>
-            <section id="lugares2">
-                <div class="maislugares" id="shoppings">
-                    <h2><a href="#">Shoppings</a></h2>
-                    <p>Descubra sobre os principais Shoppings da Cidade do Rio.</p>
+        <section class="descubra-mais">
+            <h2 class="lang" data-pt="Descubra Mais" data-en="Discover More">Descubra Mais</h2>
+            <div class="more-grid">
+                <div class="more-card" data-id="shoppings" style="--img:url('/imagens/shopping.jpg')">
+                    <span class="more-title lang" data-pt="Shoppings" data-en="Shopping Malls">Shoppings</span>
                 </div>
-                <div class="maislugares" id="praias">
-                    <h2><a href="#">Praias</a></h2>
-                    <p>Conheça com mais detalhes nossas praias!</p>
+                <div class="more-card" data-id="praias" style="--img:url('/imagens/praias.jpg')">
+                    <span class="more-title lang" data-pt="Praias" data-en="Beaches">Praias</span>
                 </div>
-                <div class="maislugares" id="entretenimento">
-                    <h2><a href="#">Eventos</a></h2>
-                    <p>Só tem tédio no Rio de Janeiro, quem quer! Temos milhares formas de entretenimento. Conheça!</p>
+                <div class="more-card" data-id="entretenimento" style="--img:url('/imagens/entretenimento.jpg')">
+                    <span class="more-title lang" data-pt="Eventos" data-en="Events">Eventos</span>
                 </div>
-                <div class="maislugares" id="hoteis">
-                    <h2><a href="#">Hotéis</a></h2>
-                    <p>Procurando algum lugar para se hospedar? Está no lugar certo.</p>
+                <div class="more-card" data-id="hoteis" style="--img:url('/imagens/hoteis.jpg')">
+                    <span class="more-title lang" data-pt="Hotéis" data-en="Hotels">Hotéis</span>
                 </div>
-            </section>
-        </aside>
+            </div>
+        </section>
     </main>
     <footer>
-        <p>&copy; Site desenvolvido por Davi dos Santos.</p>
-        <p>Saiba mais sobre nossos termos e privacidades, blá blá blá.</p>
-        <ul>
-            <li><a href="">Link1</a></li>
-            <li><a href="">Link2</a></li>
-            <li><a href="">Link3</a></li>
-            <li><a href="">Link4</a></li>
-            <li><a href="">Link5</a></li>
-        </ul>
+        <div>
+            <p>&copy; 2025 Rio Brasil Experience</p>
+            <div class="socials">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
     </footer>
-    <script src="script/jsrj.js"></script>
+
+    <div id="modal-bg" tabindex="-1" aria-modal="true" style="display:none;">
+        <div id="modal" role="dialog">
+            <button id="modal-close" aria-label="Fechar / Close">&times;</button>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+    <div id="modal-parceiro-bg" tabindex="-1" aria-modal="true" style="display:none;">
+        <div id="modal-parceiro" role="dialog">
+            <button id="modal-parceiro-close" aria-label="Fechar / Close">&times;</button>
+            <div id="modal-parceiro-content"></div>
+        </div>
+    </div>
+    <div id="zoom-img-bg" tabindex="-1">
+        <button id="zoom-img-close" aria-label="Fechar imagem">&times;</button>
+        <img src="" alt="Zoom" id="zoom-img-modal">
+    </div>
+    <script src="script/rioexperience.js"></script>
 </body>
 </html>
